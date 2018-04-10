@@ -6,6 +6,7 @@ Shitty honeypot repo; Originally made by my friend Amp (he's GitHubless) and fou
 1. Configure htaccess.txt (set your full path to .htpassword)
 2. Rename htaccess.txt to .htaccess; Rename htpasswd.txt to .htpasswd
 3. Configure CloudFlare (at the top of index.php)
+4. Configure Users (honeylog.php: line 13; use [PASSWORD_BCRYPT](https://bcrypt-generator.com) to hash your passwords.)
 4. You're done; have fun.
 
 Optional: 5. remove .htaccess and .htpasswd, so dumbasses won't give up on the login.
