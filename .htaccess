@@ -1,7 +1,8 @@
 # setup htpasswd
 AuthUserFile /full/path/to/.htpasswd
 AuthType Basic
-AuthName "Restricted Area" # put whatever bullshit you want here
+# put whatever bullshit you want here instead of "Restricted Area"
+AuthName "Restricted Area"
 Require valid-user
 
 # 404 ErrorDoc (shouldn't differ from logs/index.php)
