@@ -1,0 +1,8 @@
+# setup htpasswd
+AuthUserFile /full/path/to/.htpasswd
+AuthType Basic
+AuthName "Restricted Area" # put whatever bullshit you want here
+Require valid-user
+
+# 404 ErrorDoc (shouldn't differ from logs/index.php)
+ErrorDocument 404 "<h1>404 Not Found</h1>"
