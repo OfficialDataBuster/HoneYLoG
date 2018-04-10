@@ -1,6 +1,6 @@
 # HoneYLoG
 Shitty honeypot repo;
-**Warning:** actually, really shitty. I tried to keep start it off as a small logger, it got out of hands. Might add E-Mail Support soon.
+**Warning:** actually, really shitty. I tried to keep start it off as a small logger, it got out of hands. Might add E-Mail Support soon (if I get bored again).
 
 
 1. Configure htaccess.txt (set your full path to .htpassword)
