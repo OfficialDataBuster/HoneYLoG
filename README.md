@@ -8,3 +8,5 @@ Shitty honeypot repo
 4. You're done; have fun.
 
 Optional: 5. remove .htaccess and .htpasswd, so dumbasses won't give up on the login.
+
+> .htpassword contains root:toor, admin:admin, admin:12345, admin:qwerty & admin:nimda by default
