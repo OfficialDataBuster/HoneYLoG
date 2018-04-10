@@ -1,5 +1,5 @@
 <?php
-$cf = ''; // CloudFlare; 'yes' or 'no'
+$cf = 'no'; // CloudFlare; 'yes' or 'no'; defaulting to 'no'
 if($cf == 'y'){
 	$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
 }elseif($cf == 'yes'){
