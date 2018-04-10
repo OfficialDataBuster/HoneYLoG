@@ -1,6 +1,6 @@
 <?php
-if(isset($_GET['end'])){
-	if($_GET['end'] == 'y'){
+if(isset($_GET['sess_destroy'])){
+	if($_GET['sess_destroy'] == 'y'){
 		session_start();
 		session_destroy();
 		header('Location: ./honeylog.php');
@@ -96,7 +96,7 @@ if(isset($_POST['act'])&&isset($_POST['date'])){
 	</head>
 	<body>
 		<div style="position: absolute; top: 0; left: 10px;">
-			<small><a href="honeylog.php">Go back to input</a> || <a href="honeylog.php?end=y">Sign Out</a></small>
+			<small><a href="honeylog.php">Go back to input</a> || <a href="honeylog.php?sess_destroy=y">Sign Out</a></small>
 		</div>
 		<center>
 			<h1>HoneYLoG</h1>
@@ -118,7 +118,7 @@ if(isset($_POST['act'])&&isset($_POST['date'])){
 	</head>
 	<body>
 		<div style="position: absolute; top: 0; left: 10px;">
-			<small><a href="honeylog.php">Go back to input</a> || <a href="honeylog.php?end=y">Sign Out</a></small>
+			<small><a href="honeylog.php">Go back to input</a> || <a href="honeylog.php?sess_destroy=y">Sign Out</a></small>
 		</div>
 		<center>
 			<h1>HoneYLoG</h1>
@@ -131,7 +131,7 @@ if(isset($_POST['act'])&&isset($_POST['date'])){
 		}else{
 			$contents = checkLogs($_POST['date']);
 			die('<div style="position: absolute; top: 0; left: 10px;">
-	<small><a href="honeylog.php">Go back to input</a> || <a href="honeylog.php?end=y">Sign Out</a></small>
+	<small><a href="honeylog.php">Go back to input</a> || <a href="honeylog.php?sess_destroy=y">Sign Out</a></small>
 </div>
 <div style="margin-top: 60px; margin-left: 100px;">Edit Logs of '.$_POST['date'].'</div>
 <form method="post">
@@ -174,7 +174,7 @@ if(isset($_POST['act'])&&isset($_POST['date'])){
 		</center>';
 } ?>
 		<div style="position: absolute; top: 0; left: 10px;">
-			<small><a href="honeylog.php">Refresh</a> || <a href="honeylog.php?end=y">Sign Out</a></small>
+			<small><a href="honeylog.php">Refresh</a> || <a href="honeylog.php?sess_destroy=y">Sign Out</a></small>
 		</div>
 		<div style="text-align: center;">
 			<h1>HoneYLoG</h1>
