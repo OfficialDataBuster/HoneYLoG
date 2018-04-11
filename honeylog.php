@@ -156,15 +156,25 @@ if(isset($_POST['act'])&&isset($_POST['date'])){
 		<script>
 			function insForm(act){
 				if (act == 'check') {
-					document.getElementById('insFormDIV').innerHTML = '<form style="margin-top: 10px; margin-bottom: 10px;" method="post"><input type="hidden" name="act" value="check"/><label for="date">Date of Logs: (dd-mm-yyyy)</label> <input type="date" id="date" name="date"/><br /><input type="submit" value="Check Logs"/></form>';
+					document.getElementById('insFormDIV').innerHTML = '<form style="margin-top: 10px; margin-bottom: 10px;" method="post"><input type="hidden" name="act" value="check"/><label for="date">Date of Logs: (dd-mm-yyyy)</label> <input type="date" id="date" name="date"/><br /><button onclick="insFormToday(' + act + ')">set to today</button><input type="submit" value="Check Logs"/></form>';
 				} else if (act == 'edit') {
-					document.getElementById('insFormDIV').innerHTML = '<form style="margin-top: 10px; margin-bottom: 10px;" method="post"><input type="hidden" name="act" value="edit"/><label for="date">Date of Logs: (dd-mm-yyyy)</label> <input type="date" id="date" name="date"/><br /><input type="submit" value="Edit Logs"/></form>';
+					document.getElementById('insFormDIV').innerHTML = '<form style="margin-top: 10px; margin-bottom: 10px;" method="post"><input type="hidden" name="act" value="edit"/><label for="date">Date of Logs: (dd-mm-yyyy)</label> <input type="date" id="date" name="date"/><br /><button onclick="insFormToday(' + act + ')">set to today</button><input type="submit" value="Edit Logs"/></form>';
 				} else if (act == 'delete') {
-					document.getElementById('insFormDIV').innerHTML = '<form style="margin-top: 10px; margin-bottom: 10px;" method="post"><input type="hidden" name="act" value="delete"/><label for="date">Date of Logs: (dd-mm-yyyy)</label> <input type="date" id="date" name="date"/><br /><input type="submit" value="Delete Logs"/></form>';
+					document.getElementById('insFormDIV').innerHTML = '<form style="margin-top: 10px; margin-bottom: 10px;" method="post"><input type="hidden" name="act" value="delete"/><label for="date">Date of Logs: (dd-mm-yyyy)</label> <input type="date" id="date" name="date"/><br /><button onclick="insFormToday(' + act + ')">set to today</button><input type="submit" value="Delete Logs"/></form>';
 				} else {
 					document.getElementById('insFormDIV').innerHTML = '<strong>Error:</strong> Invalid action passed. Refreshing in 3 seconds...<meta http-equiv="Refresh" content="3"/>';
 				}
 			}
+			function insFormToday(act) {
+				if (act == 'check') {
+					document.getElementById('insFormDIV').innerHTML = '<form style="margin-top: 10px; margin-bottom: 10px;" method="post"><input type="hidden" name="act" value="check"/><label for="date">Date of Logs: (dd-mm-yyyy)</label> <input type="date" id="date" name="date" value="<?php echo date("Y-m-d"); ?>"/><br /><button onclick="insFormToday(' + act + ')">set to today</button><input type="submit" value="Check Logs"/></form>';
+				} else if (act == 'edit') {
+					document.getElementById('insFormDIV').innerHTML = '<form style="margin-top: 10px; margin-bottom: 10px;" method="post"><input type="hidden" name="act" value="edit"/><label for="date">Date of Logs: (dd-mm-yyyy)</label> <input type="date" id="date" name="date" value="<?php echo date("Y-m-d"); ?>"/><br /><button onclick="insFormToday(' + act + ')">set to today</button><input type="submit" value="Edit Logs"/></form>';
+				} else if (act == 'delete') {
+					document.getElementById('insFormDIV').innerHTML = '<form style="margin-top: 10px; margin-bottom: 10px;" method="post"><input type="hidden" name="act" value="delete"/><label for="date">Date of Logs: (dd-mm-yyyy)</label> <input type="date" id="date" name="date" value="<?php echo date("Y-m-d"); ?>"/><br /><button onclick="insFormToday(' + act + ')">set to today</button><input type="submit" value="Delete Logs"/></form>';
+				} else {
+					document.getElementById('insFormDIV').innerHTML = '<strong>Error:</strong> Invalid action passed. Refreshing in 3 seconds...<meta http-equiv="Refresh" content="3"/>';
+				}
 		</script>
 	</head>
 	<body>
