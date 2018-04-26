@@ -1,6 +1,6 @@
 # HoneYLoG
-Shitty honeypot repo; Originally made by my friend Amp (he's GitHubless) and found on LulzSec's website; 
-**Warning:** actually, really shitty. I tried to keep start it off as a small logger, it got out of hands. Might add E-Mail Support soon (if I get bored again).
+Shitty honeypot repo; Originally made by my friend Amp (@LulzAmp) and found on LulzSec's website; 
+**Warning:** actually, really shitty. I tried to start it off as a small logger, it got out of hands. Might add E-Mail Support soon (if I get bored again).
 
 
 1. Configure htaccess.txt (set your full path to .htpassword)
