@@ -1,5 +1,5 @@
 # HoneYLoG
-Shitty honeypot repo; Originally made by my friend Amp ([@LulzAmp](https://github.com/LulzAmp)) and found on LulzSec's website; 
+Shitty honeypot repo; Made by my friend Amp ([@LulzAmp](https://github.com/LulzAmp)) and found on LulzSec's website; 
 **Warning:** actually, really shitty. I tried to start it off as a small logger, it got out of hands. Might add E-Mail Support soon (if I get bored again).
 
 
