@@ -1,6 +1,6 @@
 # HoneYLoG
 Shitty honeypot repo; Made by my friend Amp ([@LulzAmp](https://github.com/LulzAmp)) and originally found on LulzSec's website; 
-**Warning:** actually, really shitty. I tried to start it off as a small logger, it got out of hands. Might add E-Mail Support soon (if I get bored again). Follow [@LulzAmp](https://github/LulzAmp/HoneYLoG/)'s version for updates.
+**Warning:** actually, really shitty. I tried to start it off as a small logger, it got out of hands. Might add E-Mail Support soon (if I get bored again). Follow [@LulzAmp](https://github.com/LulzAmp/HoneYLoG/)'s version for updates.
 
 
 1. [Configure .htaccess](https://github.com/OfficialDataBuster/HoneYLoG/blob/master/.htaccess#L2) (set the path to the full path to your .htpassword)
