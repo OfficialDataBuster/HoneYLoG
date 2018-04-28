@@ -1,15 +1,14 @@
 # HoneYLoG
 Shitty honeypot repo; Made by my friend Amp ([@LulzAmp](https://github.com/LulzAmp)) and originally found on LulzSec's website; 
-**Warning:** actually, really shitty. I tried to start it off as a small logger, it got out of hands. Might add E-Mail Support soon (if I get bored again).
+**Warning:** actually, really shitty. I tried to start it off as a small logger, it got out of hands. Might add E-Mail Support soon (if I get bored again). Follow [@LulzAmp](https://github/LulzAmp/HoneYLoG/)'s version for updates.
 
 
-1. Configure htaccess.txt (set your full path to .htpassword)
-2. Rename htaccess.txt to .htaccess; Rename htpasswd.txt to .htpasswd
-3. Configure CloudFlare (at the top of index.php)
-4. Configure Users (honeylog.php: line 13; use [PASSWORD_BCRYPT](https://bcrypt-generator.com) to hash your passwords.)
+1. [Configure .htaccess](https://github.com/OfficialDataBuster/HoneYLoG/blob/master/.htaccess#L2) (set the path to the full path to your .htpassword)
+2. [Configure CloudFlare](https://github.com/OfficialDataBuster/HoneYLoG/blob/master/index.php#L2)
+3. [Configure Users](https://github.com/OfficialDataBuster/HoneYLoG/blob/master/honeylog.php#L12-L14) ( use [PASSWORD_BCRYPT](https://bcrypt-generator.com) to hash your passwords.)
 4. You're done; have fun.
 
-Optional: 6. remove the following part of code from .htaccess and remove .htpasswd completely, so dumbasses won't give up on the login.
+Optional: 5. remove [the following lines of code](https://github.com/OfficialDataBuster/HoneYLoG/blob/master/.htaccess#L1-L6) from .htaccess and remove .htpasswd completely, so dumbasses won't give up on the login.
 ```apacheconf
 # setup htpasswd
 AuthUserFile /full/path/to/.htpasswd
@@ -19,4 +18,4 @@ AuthName "Restricted Area"
 Require valid-user
 ```
 
-> .htpassword contains **root:toor**, **admin:admin**, **Admin:admin**, **'or 1=1 /\*:'or 1=1 /*** & **'OR 1=1 /\*:'OR 1=1 /*** by default.
+> .htpassword contains **root:toor** by default.
